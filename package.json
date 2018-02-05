@@ -11,6 +11,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "express": "^4.16.2",
+    "hbs": "^4.0.1",
     "qrcode": "^1.2.0",
     "stellar-base": "^0.7.6",
     "stellar-sdk": "^0.8.0"
