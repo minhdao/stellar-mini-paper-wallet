@@ -1,5 +1,6 @@
 const StellarBase = require('stellar-base');
 const express = require('express');
+const hbs = require('hbs');
 
 var keyPair = StellarBase.Keypair.random();
 var accountId = keyPair.publicKey();
@@ -13,7 +14,10 @@ hbs.registerPartials(__dirname + '/views/partials');
 
 // route config
 app.get('/', (req, res) => {
-    res.send('hello');
+    res.render('home.hbs', {
+        pageName: 'welcome home',
+        content: 'home sweet home',
+    });
 });
 
 app.listen(3000, () => {
