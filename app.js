@@ -1,15 +1,25 @@
 const StellarBase = require('stellar-base');
-const QR = require('qrcode');
+const express = require('express');
+const hbs = require('hbs');
 
 var keyPair = StellarBase.Keypair.random();
 var accountId = keyPair.publicKey();
+var app = express();
 
-console.log(keyPair.publicKey());
-console.log(keyPair.secret());
+// set view engine
+app.set('view engine', 'hbs');
 
-QR.toCanvas(keyPair.publicKey(), { errorCorrectionLevel: 'H' }, function (err, canvas) {
-  if (err) throw err;
+// register partials
+hbs.registerPartials(__dirname + '/views/partials');
 
-  var container = document.getElementById('canvas');
-  container.appendChild(canvas);
+// route config
+app.get('/', (req, res) => {
+    res.render('home.hbs', {
+        pageName: 'welcome home',
+        content: 'home sweet home',
+    });
+});
+
+app.listen(3000, () => {
+    console.log('server started .... ');
 });
