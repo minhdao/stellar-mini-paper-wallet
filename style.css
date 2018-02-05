@@ -20,3 +20,21 @@ body{
     background-color: #005B9A;
     height: 5px;
 }
+
+.lineFolding{
+    border: dashed 1px;
+}
+
+#testPublic{
+      border: dashed 1px;
+      width:33.33%;
+}
+
+#testPrivate{
+     border: dashed 1px;
+          width:33.33%;
+}
+
+#testInfo{
+     width:33.33%;
+}

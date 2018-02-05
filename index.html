@@ -15,8 +15,20 @@
         <h1 id="header-title">Origami Stellar Wallet </h1>
     </div>
     <div id="container" class="row col-lg-12">
-        <div class="alert alert-warning  col-lg-10  col-lg-offset-1" role="alert">
-            <h3>Warning: You appear to be running this generator off of a live website, which is not recommended for creating valuable wallets.</h3>
+        
+        <div class="row col-lg-12">
+            <div class=" lineFolding testPublic">
+                <h3>Public Key</h3>
+                <canvas id="publicCanvas"></canvas>
+            </div>
+            <div class=" lineFolding ">
+                <h3>Information</h3>
+                <canvas id="publicCanvas"></canvas>
+            </div>
+            <div class=" lineFolding testPrivate">
+                <h3>Private Key</h3>
+                <canvas id="privateCanvas"></canvas>
+            </div>
         </div>
     </div>
     <div id="footer"></div>
@@ -24,7 +36,11 @@
 </body>
 </html>
 <script>
-    QRCode.toCanvas(document.getElementById('canvas'), 'GAWEDPAQHIKNAB3WBVGL3DJBCMSNKB7RFIUA3QP2LOMDWAYDJC4M37LS', function (error) {
+    QRCode.toCanvas(document.getElementById('publicCanvas'), 'GAWEDPAQHIKNAB3WBVGL3DJBCMSNKB7RFIUA3QP2LOMDWAYDJC4M37LS', function (error) {
+        if (error) console.error(error)
+        console.log('success!');
+    })
+    QRCode.toCanvas(document.getElementById('privateCanvas'), 'GAWEDPAQHIKNAB3WBVGL3DJBCMSNKB7RFIUA3QP2LOMDWAYDJC4M37LS', function (error) {
         if (error) console.error(error)
         console.log('success!');
     })
