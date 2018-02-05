@@ -1,9 +1,6 @@
-const StellarBase = require('stellar-base');
 const express = require('express');
 const hbs = require('hbs');
 
-var keyPair = StellarBase.Keypair.random();
-var accountId = keyPair.publicKey();
 var app = express();
 
 // set view engine
