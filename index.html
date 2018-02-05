@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script type="text/javascript" src="./node_modules/qrcode/build/qrcode.min.js"></script>
+    </head>
+    <body>
+        <canvas id="canvas" width="200" height="100"></canvas>
+    </body>
+    <script>
+        QRCode.toCanvas(document.getElementById('canvas'), 'GAWEDPAQHIKNAB3WBVGL3DJBCMSNKB7RFIUA3QP2LOMDWAYDJC4M37LS', function (error) {
+            if (error) console.error(error)
+            console.log('success!');
+        })
+    </script>
+</html>

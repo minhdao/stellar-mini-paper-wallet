@@ -9,6 +9,9 @@
   "author": "mdao",
   "license": "ISC",
   "dependencies": {
-    "stellar-base": "^0.7.6"
+    "bootstrap": "^4.0.0",
+    "qrcode": "^1.2.0",
+    "stellar-base": "^0.7.6",
+    "stellar-sdk": "^0.8.0"
   }
 }
