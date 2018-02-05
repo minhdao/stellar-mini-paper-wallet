@@ -13,7 +13,7 @@ body{
 }
 
 #container{
-    margin-top: 10px;
+   margin: 5% auto;
 }
 
 .line{
@@ -25,16 +25,17 @@ body{
     border: dashed 1px;
 }
 
-#testPublic{
+.testPublic{
       border: dashed 1px;
       width:33.33%;
 }
 
-#testPrivate{
+.testPrivate{
      border: dashed 1px;
           width:33.33%;
 }
 
-#testInfo{
+.testInfo{
+    border: dashed 1px;
      width:33.33%;
 }
