@@ -13,5 +13,13 @@
     "qrcode": "^1.2.0",
     "stellar-base": "^0.7.6",
     "stellar-sdk": "^0.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhdao/stellar-mini-paper-wallet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/minhdao/stellar-mini-paper-wallet/issues"
+  },
+  "homepage": "https://github.com/minhdao/stellar-mini-paper-wallet#readme"
 }
