@@ -1,0 +1,41 @@
+body{
+    margin: 0 !important;    
+}
+#header{
+    background-color: #0094ff;
+    padding: 10px 0;
+}
+#header-title{
+    color: white;
+    font-size: 17pt;
+    font-weight:bold;
+    margin-left:10%;
+}
+
+#container{
+   margin: 5% auto;
+}
+
+.line{
+    background-color: #005B9A;
+    height: 5px;
+}
+
+.lineFolding{
+    border: dashed 1px;
+}
+
+.testPublic{
+      border: dashed 1px;
+      width:33.33%;
+}
+
+.testPrivate{
+     border: dashed 1px;
+          width:33.33%;
+}
+
+.testInfo{
+    border: dashed 1px;
+     width:33.33%;
+}
