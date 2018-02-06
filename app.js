@@ -3,6 +3,8 @@ const hbs = require('hbs');
 
 const stellar = require('./stellar/stellar.js');
 
+var port = process.env.PORT || 3000;
+
 var app = express();
 
 // set view engine
@@ -24,6 +26,6 @@ app.get('/', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log('server started .... ');
+app.listen(port, () => {
+    console.log(`Server started on port ${port}`);
 });
