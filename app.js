@@ -8,6 +8,8 @@ var app = express();
 // set view engine
 app.set('view engine', 'hbs');
 
+app.use(express.static(__dirname + '/views'));
+
 // register partials
 hbs.registerPartials(__dirname + '/views/partials');
 
